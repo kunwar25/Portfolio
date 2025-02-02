@@ -1,5 +1,5 @@
 "use client";
-import { div, p } from 'motion/react-client';
+
 import projectData from '../data/proj-data.json';
 import Link from 'next/link';
 import { BackgroundGradient } from './ui/background-gradient';

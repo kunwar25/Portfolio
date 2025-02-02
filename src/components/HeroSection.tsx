@@ -1,23 +1,22 @@
 "use client";
 
-import Link from 'next/link';
+
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-import { TextGenerateEffect } from './ui/text-generate-effect';
-import Contactinfo from './Contactinfo';
+import Image from 'next/image';
 import { FlipWords } from './ui/flip-words';
 import { useRef } from 'react';
-import { SiDowndetector, SiMarkdown } from 'react-icons/si';
 import { Meteors } from './ui/meteors';
+import Link from "next/link";
     const words = [
       {
         text: "Hi,",
       },
       {
-        text: "I'",
+        text: "I",
       },
       {
-        text: "m",
+        text: "am",
       },
       {
         text: "Priyanshu !",
@@ -54,7 +53,7 @@ function HeroSection() {
      
      <div className="flex justify-center items-center">
   <div className="relative w-40 h-40 mb-20 z-70">
-    <img src="/priyanshu-profile.jpg" alt="Profile Picture" className="w-full h-full object-cover rounded-full border-4 border-indigo-400  " />
+    <Image src="/priyanshu-profile.jpg" alt="Profile Picture" className="w-full h-full object-cover rounded-full border-4 border-indigo-400  " />
     <div className="absolute inset-0  opacity-40 rounded-full"></div>
   </div>
 </div>
@@ -78,13 +77,13 @@ function HeroSection() {
 
   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
   <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
-  <a href='contact'>Contact Me</a>
+  <Link href='contact'>Contact Me</Link>
   </div>
 </button>
 
         </div>
         <div className="mt-4">
-  <a href="/Priyanshu_Kumar_resume.pdf" download>
+  <Link href="/Priyanshu_Kumar_resume.pdf" download>
     <button className="p-[3px] relative">
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
       <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent flex items-center justify-center">
@@ -92,7 +91,7 @@ function HeroSection() {
         Resume
       </div>
     </button>
-  </a>
+  </Link>
 </div>
      </div>
         
