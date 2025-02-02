@@ -4,59 +4,25 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navba
 import { cn } from "@/lib/util";
 import Link from "next/link";
 
-function Navbar({ className }: { className?: string }){
-    const [active, setActive] = useState<string | null>(null);
-
-    return(
-        <div
-        className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 font-bold ", className)}
-        >
-            <div>
-                <Menu setActive={setActive}>
-                <Link href={"/"}>
-                <MenuItem setActive={setActive} active={active}
-                item="Home">
-                    
-                </MenuItem>
-                </Link>
-                <MenuItem setActive={setActive} active={active}
-                item="About">
-                    
-                </MenuItem>
-
-
-                <MenuItem setActive={setActive} active={active}
-                item="Projects">
-                    <div className="flex flex-col gap-4 text-sm mt-4">
-                    <HoveredLink href="/QuikC'mte">QuickC'mte</HoveredLink>
-                    </div>
-                    <div className="flex flex-col gap-4 text-sm mt-4">
-                    <HoveredLink href="/VocalScribe">VocalScribe</HoveredLink>
-                    </div>
-                    <div className="flex flex-col gap-4 text-sm mt-4">
-                    <HoveredLink href="/SoilPredictor">SoilPredictor</HoveredLink>
-                    </div>
-                    <div className="flex flex-col gap-4 text-sm     mt-4">
-                    <HoveredLink href="/BookBot">BookBot</HoveredLink>
-                    </div>
-                    <div className="flex flex-col gap-4 text-sm mt-4">
-                    <HoveredLink href="/Game">Game</HoveredLink>
-                    </div>
-                </MenuItem>
-                <Link href={"/contact"}>
-                <MenuItem setActive={setActive} active={active}
-                item="Contact">
-                    
-                </MenuItem>
-                </Link>
-
-
-            </Menu>
-            </div>
-
-            
+export default function Navbar() {
+    return (
+      <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50">
+        <div className="container mx-auto flex justify-between items-center py-4 px-6">
+        <div className="text-xl font-bold tracking-wide text-blue-400">
+            PRIYANSHU
+          </div>
+          {/* Left Side - Navigation Links */}
+          <ul className="flex space-x-6 text-lg font-medium">
+            <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
+           
+            <li><a href="projects" className="hover:text-blue-400 transition">Projects</a></li>
+            <li><a href="contact" className="hover:text-blue-400 transition">Contact Me</a></li>
+          </ul>
+          
+          {/* Right Side - Name */}
+          
         </div>
-    )
-}
-
-export default Navbar;
+      </nav>
+    );
+  }
+  
