@@ -20,7 +20,7 @@ function Contactinfo() {
           <div className="flex items-center space-x-4 p-4 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition-all duration-300">
             <SiGithub className="w-6 h-6 text-gray-300 hover:text-gray-100" />
             <a
-              href="https://github.com"
+              href="https://github.com/kunwar25"
               target="_blank"
               className="text-lg text-gray-300 hover:text-gray-100"
             >
