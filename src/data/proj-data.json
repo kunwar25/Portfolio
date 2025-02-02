@@ -1,0 +1,71 @@
+{
+    "projects": [
+      {
+        "name": "QuickCommute",
+        "timeline": "2024 - Present",
+        "completed": true,
+        "description": "An efficient commuting solution that provides optimized routes, real-time traffic updates, and cost-effective travel options.",
+        
+        "features": [
+          "Real-time traffic analysis",
+          "Optimized route planning",
+          "Cost estimation for different transport options",
+          "User-friendly interface"
+        ],
+        "technologies": ["React.js", "Node.js", "MongoDB", "MapMyIndia API"]
+      },
+      {
+        "name": "VocalScribe",
+        "timeline": "2023 - Present",
+        "completed": true,
+        "description": "An AI-powered audio-to-text conversion application that enables users to transcribe speech with high accuracy.",
+        "features": [
+          "Supports multiple languages",
+          "Real-time transcription",
+          "Speaker identification",
+          "Export options in multiple formats"
+        ],
+        "technologies": ["React.js", "Python", "Whisper AI", "Firebase"]
+      },
+      {
+        "name": "SoilPredictor",
+        "timeline": "2023",
+        "completed": true,
+        "description": "A machine learning-based tool that predicts soil fertility and recommends suitable crops based on soil data.",
+        "features": [
+          "Soil parameter analysis",
+          "AI-based crop recommendations",
+          "Weather impact assessment",
+          "User-friendly web dashboard"
+        ],
+        "technologies": ["Python", "TensorFlow", "Flask", "React.js"]
+      },
+      {
+        "name": "BookBot",
+        "timeline": "2023",
+        "completed": true,
+        "description": "A chatbot-driven book recommendation system that suggests books based on user preferences and reading history.",
+        "features": [
+          "AI-based personalized recommendations",
+          "Genre and author filtering",
+          "User reviews and ratings",
+          "Cross-platform support"
+        ],
+        "technologies": ["React.js", "Node.js", "MongoDB", "NLP"]
+      },
+      {
+        "name": "Game",
+        "timeline": "2022",
+        "completed": true,
+        "description": "An interactive 2D web-based game built for entertainment and skill development.",
+        "features": [
+          "Engaging gameplay",
+          "Multiplayer mode",
+          "Leaderboard tracking",
+          "Customizable character skins"
+        ],
+        "technologies": ["JavaScript", "Phaser.js", "Node.js", "Socket.io"]
+      }
+    ]
+  }
+  
