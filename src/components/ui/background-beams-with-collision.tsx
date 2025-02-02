@@ -1,9 +1,9 @@
 "use client";
-import ContactPage from "@/app/contact/page";
+
 import { cn } from "../../lib/util";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
-import Contactinfo from "../Contactinfo";
+
 
 export const BackgroundBeamsWithCollision = ({
   children,

@@ -1,5 +1,6 @@
 'use client';
-import React, { useState } from "react";
+import Link from "next/link";
+import React from "react";
 
 export default function Navbar() {
     return (
@@ -10,10 +11,10 @@ export default function Navbar() {
           </div>
           {/* Left Side - Navigation Links */}
           <ul className="flex space-x-6 text-lg font-medium">
-            <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
+            <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
            
-            <li><a href="projects" className="hover:text-blue-400 transition">Projects</a></li>
-            <li><a href="contact" className="hover:text-blue-400 transition">Contact Me</a></li>
+            <li><Link href="projects" className="hover:text-blue-400 transition">Projects</Link></li>
+            <li><Link href="contact" className="hover:text-blue-400 transition">Contact Me</Link></li>
           </ul>
           
           {/* Right Side - Name */}

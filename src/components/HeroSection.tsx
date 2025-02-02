@@ -5,7 +5,7 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from 'next/image';
 import { FlipWords } from './ui/flip-words';
-import { useRef } from 'react';
+
 import { Meteors } from './ui/meteors';
 import Link from "next/link";
     const words = [
@@ -37,12 +37,10 @@ import Link from "next/link";
     
 function HeroSection() {
 
-  const contactRef = useRef<HTMLDivElement>(null);
+  
 
   // Function to scroll to the ContactInfo section
-  const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+
   return (
    
     <div className="h-[50rem] md:h-[50rem]  rounded-md flex flex-col
@@ -87,7 +85,7 @@ function HeroSection() {
     <button className="p-[3px] relative">
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
       <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent flex items-center justify-center">
-        <img src="/download.svg" className='w-10 h-4' />
+        <Image src="/download.svg"  alt='download' className='w-10 h-4' />
         Resume
       </div>
     </button>

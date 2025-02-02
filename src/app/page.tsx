@@ -1,8 +1,8 @@
-import { main } from "motion/react-client";
+
 import HeroSection from "../components/HeroSection";
-import Projects from "@/components/Projects";
+
 import TechStack from "@/components/TechStack";
-import Contactinfo from "@/components/Contactinfo";
+
 import AboutPage from "@/components/About";
 export default function Home() {
   return (
