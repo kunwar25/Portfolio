@@ -51,7 +51,13 @@ function HeroSection() {
      
      <div className="flex justify-center items-center">
   <div className="relative w-40 h-40 mb-20 z-70">
-    <Image src="/priyanshu-profile.jpg" alt="Profile Picture" className="w-full h-full object-cover rounded-full border-4 border-indigo-400  " />
+  <Image 
+  src="/priyanshu-profile.jpg" 
+  alt="Profile Picture" 
+  width={160} // Explicit width
+  height={160} // Explicit height
+  className="w-full h-full object-cover rounded-full border-4 border-indigo-400"
+/>
     <div className="absolute inset-0  opacity-40 rounded-full"></div>
   </div>
 </div>
@@ -85,7 +91,11 @@ function HeroSection() {
     <button className="p-[3px] relative">
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
       <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent flex items-center justify-center">
-        <Image src="/download.svg"  alt='download' className='w-10 h-4' />
+        <Image 
+        width = {10}
+        height = {4}
+
+        src="/download.svg"  alt='download' className='w-10 h-4' />
         Resume
       </div>
     </button>

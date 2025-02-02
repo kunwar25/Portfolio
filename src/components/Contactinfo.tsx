@@ -1,6 +1,6 @@
 "use client";
 import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { BackgroundBeams } from "@/components/ui/background-beams.tsx";
 
 function Contactinfo() {
 
@@ -11,8 +11,9 @@ function Contactinfo() {
   };
 
   return (
-    <BackgroundBeamsWithCollision className="relative">
+    
       <div className="flex justify-center items-center min-h-screen z-10">
+        <BackgroundBeams />
         <div className="bg-gray-800 p-8 rounded-lg shadow-2xl max-w-md w-full space-y-6">
           <h2 className="text-3xl font-semibold text-center text-white">Contact Information</h2>
 
@@ -65,7 +66,7 @@ function Contactinfo() {
 
         </div>
       </div>
-    </BackgroundBeamsWithCollision>
+    
   );
 }
 
